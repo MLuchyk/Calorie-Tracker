@@ -1,0 +1,94 @@
+body {
+    background: rgb(125, 173, 192); 
+}
+body::after {
+  content: '';
+  background: url('img1.jpg') no-repeat center top 50px/cover;
+  height: 100%;
+  opacity: 0.75;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2;
+} 
+
+a.brand-logo.left {
+    padding-left: 1rem;
+}
+
+.calorie-count{
+    position: relative;
+    height: 5.5rem;
+}
+.calorie-count::after{
+    content: '';
+    background: white;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+h3 {
+    font-size: 4rem;
+    padding-top: 0.6rem, 0, 0.6rem, 0;
+}
+i.fa {
+  font-size: 1rem;
+  padding-right: 0.5rem;
+}
+i.fas.fa-utensils {
+    color: white;
+    font-size: 2rem;
+}
+form button {
+    margin-bottom: 1rem;
+}
+
+
+/* Smartphones */
+@media(max-width: 600px) {
+
+    a.brand-logo.left{
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        padding-top: 1.3rem;
+    }
+
+    i.fas.fa-utensils {
+        padding-top: 1rem;
+    }
+
+    .update-btn, .delete-btn{
+        width: 50%;
+    }
+    
+}
+
+/* Landscape */
+
+@media(max-height: 700px) {
+    body::after {
+     height: 150%;
+    }
+}
+
+@media(max-height: 380px) {
+    body::after {
+        height: 200%;
+       }
+    
+    h3 {
+        font-size: 2.5rem;
+        padding-top: 1.3rem;
+    }
+
+}
